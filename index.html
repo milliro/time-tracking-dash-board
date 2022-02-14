@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body>
+  <main>
+    <section class="container-dashboard">
+      <div class="container-perfil">
+        <div class="jeremy-img">
+          <img src="./images/image-jeremy.png" alt="Perfil Image">
+        </div>
+        <div>
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="#daily" id="daily">Daily</a>
+          </li>
+          <li>
+            <a href="#weekly" id="weekly">Weekly</a>
+          </li>
+          <li>
+            <a href="#monthly" id="monthly">Monthly</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="container-cards">
+      <section class="card-item work">
+        <div class="activity-icon">
+          <img src="./images/icon-work.svg" alt="">
+        </div>
+        <div class="container-description">
+          <div class="container-title">
+            <h3 class="title">Work</h3>
+            <a href="#" class="icon-ellipsis">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+          <div class="content">
+            <h2 class="current"></h2>
+            <p class="previous"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-item play">
+        <div class="activity-icon">
+          <img src="./images/icon-play.svg" alt="">
+        </div>
+        <div class="container-description">
+          <div class="container-title">
+            <h3 class="title">Play</h3>
+            <a href="#" class="icon-ellipsis">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+          <div class="content">
+            <h2 class="current"></h2>
+            <p class="previous"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-item study">
+        <div class="activity-icon">
+          <img src="./images/icon-study.svg" alt="">
+        </div>
+        <div class="container-description">
+          <div class="container-title">
+            <h3 class="title">Study</h3>
+            <a href="#" class="icon-ellipsis">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+          <div class="content">
+            <h2 class="current"></h2>
+            <p class="previous"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-item exercise">
+        <div class="activity-icon img-exercise">
+          <img src="./images/icon-exercise.svg" alt="">
+        </div>
+        <div class="container-description">
+          <div class="container-title">
+            <h3 class="title">Exercise</h3>
+            <a href="#" class="icon-ellipsis">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+          <div class="content">
+            <h2 class="current"></h2>
+            <p class="previous"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-item social">
+        <div class="activity-icon">
+          <img src="./images/icon-social.svg" alt="">
+        </div>
+        <div class="container-description">
+          <div class="container-title">
+            <h3 class="title">Social</h3>
+            <a href="#" class="icon-ellipsis">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+          <div class="content">
+            <h2 class="current"></h2>
+            <p class="previous"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-item self-care">
+        <div class="activity-icon">
+          <img src="./images/icon-self-care.svg" alt="">
+        </div>
+        <div class="container-description">
+          <div class="container-title">
+            <h3 class="title">Self Care</h3>
+            <a href="#" class="icon-ellipsis">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+          <div class="content">
+            <h2 class="current"></h2>
+            <p class="previous"></p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.github.com/milliro" target="_blank">@milliro</a>.
+  </footer>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

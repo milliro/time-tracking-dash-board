@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+  /* PRIMARY */
+  --blue: hsl(246, 80%, 60%);
+  /* work */
+  --light-orange: hsl(15, 100%, 70%);
+  /* play */
+  --soft-blue: hsl(195, 74%, 62%);
+  /* study */
+  --light-red: hsl(348, 100%, 68%);
+  /* exercise */
+  --lime-green: hsl(145, 58%, 55%);
+  /* social */
+  --violet: hsl(264, 64%, 52%);
+  /* self care */
+  --soft-yellow: hsl(43, 84%, 65%);
+
+  /* NEUTRAL */
+  --white: hsl(0, 0%, 100%);
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --dark-desaturated-blue: hsl(235, 46%, 30%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+}
+
+/* reset */
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* content */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: var(--very-dark-blue);
+  color: var(--white);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+main {
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 22% 1fr;
+  grid-gap: 1.875rem;
+}
+
+.container-dashboard {
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  background: var(--dark-blue);
+}
+
+.container-perfil {
+  background: var(--blue);
+  padding: 30px;
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.jeremy-img {
+  max-width: 90px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 3px solid var(--white);
+  margin-bottom: 40px;
+}
+
+.container-perfil p {
+  font-size: .9rem;
+  color: var(--pale-blue);
+}
+
+.container-perfil h1 {
+  font-weight: 300;
+  font-size: 2.6rem;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.nav {
+  padding: 18px 30px;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 1.125rem;
+  color: var(--desaturated-blue);
+  padding: 10px 0;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+}
+
+.nav-list a:hover {
+  color: var(--white);
+}
+
+.nav-list a.active {
+  color: var(--white);
+}
+
+.container-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.875rem;
+}
+
+.activity-icon {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  height: 50px;
+}
+
+.activity-icon img{
+  max-width: 100px;
+  position: absolute;
+  top: -10px;
+  right: 15px;
+}
+
+.img-exercise img{
+  top: 0px;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.container-description {
+  padding: 30px;
+  background: var(--dark-blue);
+  width: 100%;
+  position: relative;
+  bottom: -1px;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+}
+
+.container-description:hover {
+  background: var(--dark-desaturated-blue);
+  cursor: pointer;
+}
+
+.container-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.125rem;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-right: 90px;
+}
+
+.icon-ellipsis {
+  display: block;
+  padding: 10px 0;
+}
+
+.icon-ellipsis svg path:hover{
+  fill: var(--white);
+}
+
+.current {
+    font-size: 3.6rem;
+    font-weight: 300;
+}
+
+.previous {
+  font-size: .9rem;
+  color: var(--pale-blue);
+}
+
+.work {
+  background: var(--light-orange);
+}
+  
+.play {
+  background: var(--soft-blue);
+}
+
+.study {
+  background: var(--light-red);
+}
+
+.exercise {
+  background: var(--lime-green);
+}
+
+.social {
+  background: var(--violet);
+}
+
+.self-care {
+  background: var(--soft-yellow);
+}
+
+.attribution { 
+  font-size: .9rem; 
+  text-align: center; 
+  color: var(--pale-blue);
+  position: absolute;
+  bottom: 5px;
+}
+
+.attribution a {
+  color: var(--blue);
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+}
+
+.attribution a:hover {
+  color: var(--violet);
+}
+
+@media (max-width: 960px) {
+  main {
+    max-width: 350px;
+    grid-template-columns: 1fr;
+    grid-gap: 1.8rem;
+  }
+
+  .container-perfil {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    background: var(--blue);
+  }
+
+  .jeremy-img {
+    max-width: 70px;
+    margin-bottom: 0px;
+  }
+  
+  .container-perfil p {
+    font-size: .8rem;
+    color: var(--pale-blue);
+  }
+  
+  .container-perfil h1 {
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin: 0px;
+  }  
+  
+  .nav {
+    padding: 10px;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-list a {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .container-cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 1.8rem;
+  }
+
+  .container-description {
+    padding: 20px;
+  }
+  
+  .container-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .current {
+    font-size: 1.8rem;
+    font-weight: 300;
+  }  
+
+  .previous {
+    font-size: .7rem;
+  }
+
+  .attribution { 
+    position: relative;
+    font-size: .7rem; 
+    bottom: -50px;
+  }
+
+  .attribution a {
+    padding: 10px 0;
+  }
+}
