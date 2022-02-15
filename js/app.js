@@ -1,6 +1,7 @@
 const navLinks = document.querySelectorAll('.nav-list a')
 const current = document.querySelectorAll('.current')
 const previous = document.querySelectorAll('.previous')
+const content = document.querySelectorAll('.content')
 
 const getJSON = async () => {
   const response = await fetch('./data.json')
@@ -20,6 +21,11 @@ const daily = () => {
     })
   })
   navLinks[0].classList.add('active')
+  setInterval(() => {
+    content.forEach(item => {
+      item.classList.add('active')
+    })
+  }, 10)
 }
 
 const weekly = () => {
@@ -55,9 +61,8 @@ const pluralOrSingular = value => {
 }
 
 const resetClass = () => {
-  navLinks.forEach(item => {
-    item.classList.remove('active')
-  })
+  navLinks.forEach(link => link.classList.remove('active'))
+  content.forEach(item => item.classList.remove('active'))
 }
 
 navLinks.forEach(link => {
